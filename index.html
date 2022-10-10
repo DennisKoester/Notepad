@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body onload="render()">
+
+    <div class="background"></div>
+
+    <div class="nav-bar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="archive.html">ARCHIVE</a></li>
+        <li><a href="trash.html">TRASH</a></li>
+    </div>
+
+    <h1>NOTEPAD</h1>
+
+    <div id="inputSection">
+        <form class="note">
+            <input id="title" type="text" placeholder="Title">
+            <textarea id="note" type="text" placeholder="Write note.."></textarea>
+            <button class="btn" type="button" onclick="createNote();">Add Note</button>
+        </form>
+    </div>
+
+    <div id="noteList"></div>
+
+</body>
+
+</html>

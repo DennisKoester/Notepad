@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    scroll-behavior: smooth;
+
+}
+
+.d-none {
+    display: none;
+}
+
+.background {
+    background-image: url(img/vintage-g59f1822b5_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1250px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+form>* {
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    width: 200px;
+    background-color: transparent;
+    outline: none;
+}
+
+#title,
+h2 {
+    font-weight: bold;
+    font-size: 26px;
+    outline: none;
+}
+
+#note,
+p {
+    font-size: 20px;
+    outline: none;
+}
+
+
+#noteList,
+#trashList,
+#archiveList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.note {
+    margin: 13px;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(230, 230, 230, 0.866);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 370px;
+    font-size: 60px;
+}
+
+h2 {
+    padding-bottom: 8px;
+}
+
+img {
+    height: 24px;
+    object-fit: contain;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.2);
+    transition: 350ms;
+}
+
+li {
+    list-style: none;
+    padding: 0 30px 0;
+
+}
+
+.nav-bar {
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash img {
+    height: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
